@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }}</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:title" content="{{ page.og_title }}">
+    <meta property="og:description" content="{{ page.og_description }}">
+    <meta property="og:image" content="{{ page.og_image }}">
+    <meta property="og:url" content="{{ page.og_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+</head>
+<body>
+    {% include navbar.html %}
+
+    <main class="container">
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <script src="{{ '/assets/js/custom.js' | relative_url }}"></script>
+</body>
+</html>
